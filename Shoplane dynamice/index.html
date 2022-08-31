@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="CodePen" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"
+    />
+    <script
+    src="https://kit.fontawesome.com/023490c952.js"
+    crossorigin="anonymous"
+  ></script>
+    <link
+      rel="mask-icon"
+      type="image/x-icon"
+      href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+      color="#111"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>CodePen - Dynamic Product Page</title>
+
+    <script>
+      window.console = window.console || function (t) {};
+    </script>
+
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+  </head>
+  <div class="header" >
+    <div >
+      <h4 >
+        <span  style="color: #009688; letter-spacing: 1px; font-weight: 500"
+          >SHOP</span
+        >LANE
+      </h4>
+    </div>
+    <ul class="navbar" >
+     <a href="./main.html"> <li  class="nav">HOME</li></a>
+      <a href="./main.html"><li class="nav">CLOTHINGS</li></a>
+      <a href="./main.html"><li class="nav">ACCESSORIES</li></a>
+    </ul>
+    <div class="icons" >
+      <div >
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="cart" id="carIconn">
+        <a href="">
+          <i class='fas fa-shopping-cart'></i>
+            <span id="cart-count">0</span>
+          </i>
+        </a>
+        <i class="fas fa-user-circle"></i>
+      </div>
+     
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </div>
+  <body translate="no">
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Product Details Page</title>
+      </head>
+
+      <body id="whole-page">
+        <!-- Js Preview -->
+      </body>
+    </html>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+    <script id="rendered-js">
+      let productpage = document.querySelector("#whole-page");
+
+      // let title = document.getElementsByClassName("title")[0].innerHTML = "Men Navy Blue Solid Sweatshirt";
+
+      let productsec = document.createElement("div");
+
+      productsec.classList = "product-sec";
+
+      let product = `
+
+
+<div class="img-sec">
+
+<img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg"
+    alt="" id="mainImg">
+
+</div>
+
+<div class="text-sec">
+
+<h1 class="title">Men Navy Blue Solid Sweatshirt</h1>
+
+<h4 class="category">United Colors of Benetton</h4>
+
+<p class="price">Price: Rs <span>2599</span></p>
+
+<p class="discription">Navy solid sweatshirt with patchwork, has a round neck, long sleeves, straight hem</p>
+
+<h4 id="smallimg">Product Preview</h4>
+
+
+<div class="small-img">
+
+    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg"
+        alt="" class="active">
+
+    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/efc3d5b9-1bb3-4427-af53-7acae7af98951541402833591-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-2.jpg"
+        alt="" class="active">
+
+    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg"
+        alt="" class="active">
+
+    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/66490b64-32de-44b4-a6e4-fe36f1c040051541402833548-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-4.jpg"
+        alt="" class="active">
+
+    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/957be784-7c5d-4e90-ab9f-0928015b22891541402833645-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-5.jpg"
+        alt="" class="active">
+
+
+
+</div>
+
+<button id="cartbtn">Add To Cart</button>
+
+
+
+</div>
+
+
+`;
+
+      productsec.innerHTML += product;
+
+      productpage.appendChild(productsec);
+
+      // product img change effect
+
+      let proImg = document.getElementById("mainImg");
+      let smallimg = document.getElementsByClassName("active");
+
+      console.log(smallimg);
+
+      smallimg[0].onclick = function () {
+        proImg.src = smallimg[0].src;
+      };
+      smallimg[1].onclick = function () {
+        proImg.src = smallimg[1].src;
+      };
+      smallimg[2].onclick = function () {
+        proImg.src = smallimg[2].src;
+      };
+      smallimg[3].onclick = function () {
+        proImg.src = smallimg[3].src;
+      };
+      smallimg[4].onclick = function () {
+        proImg.src = smallimg[4].src;
+      };
+
+      var cartbtn = document.getElementById("cartbtn");
+
+      cartbtn.onclick = function () {
+        alert("Your Item Will Added In Your Cart Soon !");
+      };
+      //# sourceURL=pen.js
+    </script>
+    <footer>
+      <ul class="online-store">
+        <li><h3 class="footer-head">ONLINE STORE</h3></li>
+        <li style="color: #fff"><a href="#">Men Clothing</a></li>
+        <li><a href="#">Women Clothing</a></li>
+        <li><a href="#">Men Accessories</a></li>
+        <li><a href="#">Women Accessories</a></li>
+      </ul>
+      <ul class="helpful-links">
+        <li><h3 class="footer-head">HELPFUL LINKS</h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="patners" style="color: #fff">
+        <li><h3 class="footer-head">PATNERS</h3></li>
+        <li><a href="#">Zara</a></li>
+        <li><a href="#">Pantaloons</a></li>
+        <li><a href="#">Levis</a></li>
+        <li><a href="#">Ucb</a></li>
+        <li><a href="#">+ Many More</a></li>
+      </ul>
+      <ul class="address">
+        <li><h3 class="footer-head">ADDRESS</h3></li>
+        <li>Building 101</li>
+        <li>Central Avenue</li>
+        <li>LA - 902722</li>
+        <li>United States</li>
+      </ul>
+    </footer>
+  </body>
+</html>
